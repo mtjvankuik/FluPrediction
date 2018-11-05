@@ -17,7 +17,7 @@ var client = new Twitter({
  * Stream statuses filtered by keyword
  * @param track The keyword that is monitored for filtering
  **/
-client.stream('statuses/filter', {track: 'griep'},  function(stream) {
+client.stream('statuses/filter', {track: 'flu'},  function(stream) {
     stream.on('data', function(tweet) {
         console.log(tweet.text);
     });

@@ -3,6 +3,9 @@ require('dotenv').config();
 
 var Twitter = require('twitter');
 
+//var tweetsNew;
+//var nextToken;
+
 /**
  * Client authentication
  **/
@@ -18,12 +21,45 @@ var client = new Twitter({
  * Keyword: q
  * returns: JSON response
  **/
-function retrieveTweets() {
-    client.get('search/tweets', {q: 'griep', fromDate: '201601010000', maxResults: 500, lang: 'nl'}, function(error, tweets, response) {
-        if(error) throw error;
+function retrieveTweetsBatch() {
+    client.get('search/tweets', {
+        q: 'griep since:2017-05-10',
+        count: '100',
+        lang: 'nl'
+    }, function (error, tweets, response) {
+        if (error) throw error;
         console.log(tweets);
-        console.log(response);
+        //var nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
+        var nextToken = tweets.search_metadata.next_results;
+
+        //retrieve first 100 tweets from query
+        for (var i = 0; i < 100; i++) {
+            console.log(tweets.statuses[i].text);
+        }
+
+        //loop over all pages and retrieve all tweets
+        for (var i = 0; i < 4; i++) {
+
+            client.get('search/tweets', {
+                q: 'griep since:2017-05-10',
+                count: '100',
+                lang: 'nl',
+                next: nextToken
+            }, function (error, tweets, response) {
+                if (error) throw error;
+                console.log(tweets);
+
+                //nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
+                nextToken = tweets.search_metadata.next_results;
+                count = tweets.search_metadata.count;
+                console.log(nextToken)
+                for (var i = 0; i < 100; i++) {
+                    console.log(tweets.statuses[i].text);
+                }
+            });
+        }
     });
+
 }
 
-retrieveTweets();
+retrieveTweetsBatch();
