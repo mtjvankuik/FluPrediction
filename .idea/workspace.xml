@@ -1,13 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/twitterSearch2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twitter_search.js" afterDir="false" />
+    <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="Added AJAX request and POST request, added jQuery lib and other NPM libraries">
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/download.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/get.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/assets/Capital/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/assets/index.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/assets/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/assets/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ajax-request/test/service/assets/index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/camelCase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/toType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rboxStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/oauth-1.0a.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/oauth-1.0a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/getParameterString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/mocha.opts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/oauth_body_hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/last_ampersand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/multiple_values.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/multiple_values_qs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/nonce_length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/parameter_seperator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/realm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/options/signature_method.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/services/bitbucket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/services/flickr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/services/linkedin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/services/openbank.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/services/twitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/oauth-1.0a/test/twitter_sample_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twitterAjax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twitterNodeJS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twitterSearchPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/request/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwitterAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/TwitterAjax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitterSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitterSearchGet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterSearch2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_search.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,50 +194,50 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="twitterSearch.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterSearch.js">
+      <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="360">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitterSearch2.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/twitterSearch2.js">
+      <file leaf-file-name="twitterSearchPost.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="12" column="64" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitter_search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitter_search.js">
+      <file leaf-file-name="twitterNodeJS.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitterNodeJS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitterAjax.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/twitterAjax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-158" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="twitter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="241" column="22" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="www" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/www">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1208">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="180">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -91,11 +258,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -107,8 +269,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Influenza</find>
-      <find>influ</find>
       <find>maxRes</find>
       <find>nl</find>
       <find>lang</find>
@@ -136,7 +296,9 @@
       <find>Een griepvaccin dat besc</find>
       <find>een g</find>
       <find>url</find>
+      <find>request</find>
       <find>post</find>
+      <find>json</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,7 +326,12 @@
         <option value="$PROJECT_DIR$/twitterStream.js" />
         <option value="$PROJECT_DIR$/node_modules/twitter_search.js" />
         <option value="$PROJECT_DIR$/twitterSearch.js" />
+        <option value="$PROJECT_DIR$/twitter_search.js" />
         <option value="$PROJECT_DIR$/twitterSearch2.js" />
+        <option value="$PROJECT_DIR$/TwitterAjax.js" />
+        <option value="$PROJECT_DIR$/twitterAjax.js" />
+        <option value="$PROJECT_DIR$/twitterSearchGet.js" />
+        <option value="$PROJECT_DIR$/twitterNodeJS.js" />
       </list>
     </option>
   </component>
@@ -203,29 +370,6 @@
             <path>
               <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
@@ -272,27 +416,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.twitterSearch2.js">
-    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="twitterSearch2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="twitterSearch2.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="twitterSearch.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearch.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="twitterStream.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="twitterStream.js" working-dir="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Node.js.bin/www">
+    <configuration name="twitterAjax.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="twitterAjax.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="twitterNodeJS.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterNodeJS.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="twitterSearchGet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchGet.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="twitterSearchPost.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchPost.js" working-dir="$PROJECT_DIR$" />
     <configuration name="twitter_search.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitter_search.js" working-dir="$PROJECT_DIR$/node_modules" />
     <list>
       <item itemvalue="Node.js.bin/www" />
-      <item itemvalue="Node.js.twitterSearch.js" />
-      <item itemvalue="Node.js.app.js" />
-      <item itemvalue="Node.js.twitterStream.js" />
+      <item itemvalue="Node.js.twitterSearchGet.js" />
       <item itemvalue="Node.js.twitter_search.js" />
-      <item itemvalue="Node.js.twitterSearch2.js" />
+      <item itemvalue="Node.js.twitterSearchPost.js" />
+      <item itemvalue="Node.js.twitterNodeJS.js" />
+      <item itemvalue="Node.js.twitterAjax.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.twitterSearch2.js" />
-        <item itemvalue="Node.js.twitterSearch.js" />
+        <item itemvalue="Node.js.twitterSearchGet.js" />
+        <item itemvalue="Node.js.twitterAjax.js" />
+        <item itemvalue="Node.js.twitterNodeJS.js" />
+        <item itemvalue="Node.js.twitterSearchPost.js" />
         <item itemvalue="Node.js.twitter_search.js" />
-        <item itemvalue="Node.js.twitterStream.js" />
-        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +452,7 @@
       <updated>1541183562815</updated>
       <workItem from="1541183564019" duration="7475000" />
       <workItem from="1541194386592" duration="630000" />
-      <workItem from="1541406484704" duration="30903000" />
+      <workItem from="1541406484704" duration="42772000" />
     </task>
     <task id="LOCAL-00001" summary="Installed node package and created twitter.js">
       <created>1541191148463</created>
@@ -345,25 +489,33 @@
       <option name="project" value="LOCAL" />
       <updated>1541441596994</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Editing twtterSearch">
+      <created>1541501060443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541501060443</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47038000" />
+    <option name="totallyTimeSpent" value="58907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533757" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2573471" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32827586" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3296" />
-      <window_info anchor="right" id="Run" order="3" weight="0.28029078" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.3351724" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.13103448" />
+      <window_info anchor="right" id="Run" order="3" weight="0.35541195" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33549434" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49960285" visible="true" weight="0.3351724" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,7 +550,10 @@
     <MESSAGE value="Added environment file and twitter authentication modification" />
     <MESSAGE value="TwitterSearch and TwitterStream implementations" />
     <MESSAGE value="Enhancement of Twitter Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhancement of Twitter Search" />
+    <MESSAGE value="Editing twtterSearch" />
+    <MESSAGE value="Added AJAX request and POST request, added jQuery lib" />
+    <MESSAGE value="Added AJAX request and POST request, added jQuery lib and other NPM libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AJAX request and POST request, added jQuery lib and other NPM libraries" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -432,7 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
@@ -446,7 +601,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
@@ -484,7 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="16" selection-end-column="3" />
@@ -498,7 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
@@ -518,9 +673,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/lib/Twitter.js" />
     <entry file="file://$PROJECT_DIR$/data/twitterExampleCalls.js" />
     <entry file="file://$PROJECT_DIR$/data/twitter_config.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/twitter/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -572,35 +724,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="241" column="22" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="562">
+          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearch2.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="180">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="38" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterNodeJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterAjax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158" />
       </provider>
     </entry>
   </component>

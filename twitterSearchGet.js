@@ -26,7 +26,6 @@ function retrieveTweetsBatch() {
     }, function (error, tweets, response) {
         if (error) throw error;
         console.log(tweets);
-        //var nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
         var nextToken = tweets.search_metadata.next_results;
 
         //retrieve first 100 tweets from query
@@ -49,12 +48,10 @@ function retrieveTweetsBatch() {
                 next: encodeURIComponent(nextToken),
             }, function (error, tweets, response) {
                 if (error) throw error;
-                //console.log(tweets);
 
-                //nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
                 nextToken = tweets.search_metadata.next_results;
                 count = tweets.search_metadata.count;
-                //console.log(nextToken)
+
                 for (var i = 0; i < 100; i++) {
                     console.log(tweets.statuses[i].text);
                 }
