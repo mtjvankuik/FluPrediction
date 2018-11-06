@@ -19,10 +19,11 @@ var client = new Twitter({
  * returns: JSON response
  **/
 function retrieveTweetsBatch() {
-    client.get('search/tweets', {
-        q: 'griep since:2017-05-10',
-        count: '100',
-        lang: 'nl',
+    client.post('tweets/search/30day/development', {
+        query: 'griep',
+        //fromDate: '201701010000',
+        //toDate: '201801010000',
+        maxResults: '100',
     }, function (error, tweets, response) {
         if (error) throw error;
         console.log(tweets);
@@ -32,21 +33,23 @@ function retrieveTweetsBatch() {
         //retrieve first 100 tweets from query
         for (var i = 0; i < 100; i++) {
             //console.log(tweets.statuses[i].text);
-            var lowestID = tweets.statuses[i].id;
-            //console.log(lowestID);
-            if( tweets.statuses[i].id < lowestID ){
-                lowestID = tweets.statuses[i].id;
-            }
+            //var lowestID = tweets.statuses[i].id;
+            console.log(lowestID);
+            // if( tweets.statuses[i].id < lowestID ){
+            //     lowestID = tweets.statuses[i].id;
+            // }
         }
 
         //loop over all pages and retrieve all tweets
         for (var i = 0; i < 4; i++) {
 
-            client.get('search/tweets', {
-                q: 'griep since:2017-05-10',
-                count: '100',
-                lang: 'nl',
-                next: encodeURIComponent(nextToken),
+
+            client.post('tweets/search/30day/development', {
+                query: 'griep',
+                //fromDate: '201701010000',
+                //toDate: '201801010000',
+                maxResults: '100',
+                next: nextToken,
             }, function (error, tweets, response) {
                 if (error) throw error;
                 //console.log(tweets);
@@ -54,9 +57,9 @@ function retrieveTweetsBatch() {
                 //nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
                 nextToken = tweets.search_metadata.next_results;
                 count = tweets.search_metadata.count;
-                //console.log(nextToken)
+                console.log(nextToken)
                 for (var i = 0; i < 100; i++) {
-                    console.log(tweets.statuses[i].text);
+                    //console.log(tweets.statuses[i].text);
                 }
             });
         }
