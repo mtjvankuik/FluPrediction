@@ -14,51 +14,42 @@ var client = new Twitter({
 });
 
 /**
- * Search tweets filtered by keyword
- * Keyword: q
+ * Search first batch of tweets filtered by keyword
+ * Query: q
  * returns: JSON response
  **/
-function retrieveTweetsBatch() {
+function retrieveTweetsBatch(token) {
+    var maxID = token;
+
     client.get('search/tweets', {
-        q: 'griep since:2017-05-10',
+        q: 'flu since:2010-05-10',
         count: '100',
-        lang: 'nl',
+        lang: 'en',
+        max_id: maxID,
     }, function (error, tweets, response) {
         if (error) throw error;
-        console.log(tweets);
-        var nextToken = tweets.search_metadata.next_results;
+        //console.log(tweets);
 
-        //retrieve first 100 tweets from query
-        for (var i = 0; i < 100; i++) {
-            //console.log(tweets.statuses[i].text);
-            var lowestID = tweets.statuses[i].id;
-            //console.log(lowestID);
-            if( tweets.statuses[i].id < lowestID ){
-                lowestID = tweets.statuses[i].id;
-            }
-        }
+        var next_results_url_params = tweets.search_metadata.next_results;
+        if (next_results_url_params == null) return null;
 
-        //loop over all pages and retrieve all tweets
-        for (var i = 0; i < 4; i++) {
+        var next_max_id = next_results_url_params.split('max_id=')[1].split('&')[0];
+        var list = tweets.statuses;
 
-            client.get('search/tweets', {
-                q: 'griep since:2017-05-10',
-                count: '100',
-                lang: 'nl',
-                next: encodeURIComponent(nextToken),
-            }, function (error, tweets, response) {
-                if (error) throw error;
+        maxID = next_max_id;
 
-                nextToken = tweets.search_metadata.next_results;
-                count = tweets.search_metadata.count;
+        var allTweets = retrieveTweetsBatch(maxID);
 
-                for (var i = 0; i < 100; i++) {
-                    console.log(tweets.statuses[i].text);
-                }
-            });
-        }
+        return list + allTweets;
     });
-
 }
 
-retrieveTweetsBatch();
+/**
+ * Search all tweets using recursion and pagination
+ * returns: JSON response
+ **/
+function receiveTweets(){
+    var data = retrieveTweetsBatch();
+}
+
+receiveTweets();

@@ -25,6 +25,7 @@ function retrieveTweetsBatch() {
         //toDate: '201801010000',
         //maxResults: '100',
     }, function (error, tweets, response) {
+        console.log(response);
         if (error) throw error;
         console.log(tweets);
         //var nextToken = 'https://api.twitter.com/1.1/search/tweets.json' + encodeURIComponent(tweets.search_metadata.next_results);
