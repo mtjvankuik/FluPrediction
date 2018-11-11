@@ -15,20 +15,29 @@ var client = new Twitter({
 
 /**
  * Search first batch of tweets filtered by keyword
- * Query: q
+ * Twitter Standard Search implementation
+ * Tweets of last 7 days or less
  * returns: JSON response
  **/
-function retrieveTweetsBatch(token) {
+function retrieveTweetsBatch(token){
     var maxID = token;
 
     client.get('search/tweets', {
-        q: 'flu since:2010-05-10',
+        q: 'flu -filter:retweets',
         count: '100',
         lang: 'en',
+        until: '2018-11-12',
         max_id: maxID,
     }, function (error, tweets, response) {
+
+        // var obj = {
+        //     tweets: []
+        // }
+        // obj.tweets.push({text: text});
+        // return obj
+
         if (error) throw error;
-        //console.log(tweets);
+        console.log(tweets.statuses);
 
         var next_results_url_params = tweets.search_metadata.next_results;
         if (next_results_url_params == null) return null;
@@ -42,14 +51,17 @@ function retrieveTweetsBatch(token) {
 
         return list + allTweets;
     });
-}
+};
 
-/**
- * Search all tweets using recursion and pagination
- * returns: JSON response
- **/
-function receiveTweets(){
-    var data = retrieveTweetsBatch();
-}
+module.exports = {
 
-receiveTweets();
+    /**
+     * Search all tweets using recursion and pagination
+     * returns: JSON response
+     **/
+    receiveTweets: function (){
+        var data = retrieveTweetsBatch();
+        return data;
+    }
+}
+//receiveTweets();

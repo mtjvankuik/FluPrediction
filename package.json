@@ -6,6 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@google-cloud/language": "^2.0.0",
+    "@google-cloud/storage": "^2.3.0",
     "ajax-request": "^1.2.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
