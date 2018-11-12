@@ -24,9 +24,15 @@ const text2 = 'Today marks the 100 year anniversary of the end of World War I. '
     'devastating was the Spanish flu that spread throughout the world by the returning ' +
     'soldiers. It killed 50 million people.';
 
+const text3 = 'All I want is McDonalds and a Milkshake but rn I cant even keep down a glass of gingerale... stomach flu sucks';
+
+var fs  = require("fs");
+var path = 'data/tweets.txt';
+var tweets = fs.readFileSync(path).toString().split('\n');
+console.log(tweets);
 // Prepares a document, representing the provided text
 const document = {
-    content: text2,
+    content: text,
     type: 'PLAIN_TEXT',
 };
 
