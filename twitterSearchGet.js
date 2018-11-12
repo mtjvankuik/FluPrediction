@@ -19,7 +19,8 @@ var client = new Twitter({
  * Tweets of last 7 days or less
  * returns: JSON response
  **/
-function retrieveTweetsBatch(token){
+
+var retrieveTweetsBatch = function(token){
     var maxID = token;
 
     client.get('search/tweets', {
@@ -38,6 +39,7 @@ function retrieveTweetsBatch(token){
 
         // place tweets in array
         if (error) throw error;
+
         for (let i = 0; i < data.length; i++) {
             //console.log(tweets.statuses[i].text);
             var tweet = {
@@ -47,14 +49,14 @@ function retrieveTweetsBatch(token){
             allTweets.push(tweet);
         }
 
-        console.log(allTweets);
+        //console.log(allTweets);
 
         var next_results_url_params = tweets.search_metadata.next_results;
         if (next_results_url_params == null) return null;
 
         var next_max_id = next_results_url_params.split('max_id=')[1].split('&')[0];
 
-        // write tweets to text file
+        //write tweets to text file
         var fs = require('fs');
 
         var file = fs.createWriteStream('data/tweets.txt', {'flags': 'a'});
@@ -63,23 +65,30 @@ function retrieveTweetsBatch(token){
             file.write(allTweets[i].text + '\n');
         }
         file.end();
+
+        // replace next token with new maxID
         maxID = next_max_id;
 
         retrieveTweetsBatch(maxID);
-
+        console.log(allTweets);
         //return list + allTweets;
+        //exports.allTweets = allTweets;
         return allTweets;
     });
 };
 
-module.exports = {
+/**
+ * Search all tweets using recursion and pagination
+ * returns: JSON response
+ **/
+var receiveTweets = function(){
+    var tweets = retrieveTweetsBatch();
+    return tweets;
 
-    /**
-     * Search all tweets using recursion and pagination
-     * returns: JSON response
-     **/
-    receiveTweets: function (){
-        var data = retrieveTweetsBatch();
-        return data;
-    }
 }
+
+receiveTweets();
+
+//exports.retrieveTweetsBatch = retrieveTweetsBatch(token);
+exports.receiveTweets = receiveTweets();
+
