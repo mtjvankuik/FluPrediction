@@ -27,42 +27,40 @@ function retrieveTweetsBatch(token){
         count: '100',
         lang: 'en',
         until: '2018-11-11',
+        geocode: '54.161342,-1.985778,600km',
         max_id: maxID,
     }, function (error, tweets, response) {
 
-        var tweetobjs;
-        var tweet = {
-            text: text,
-            location: location,
-        };
+        var allTweets = [];
 
         // return obj
         var data = tweets.statuses;
-        //var arr = [];
 
         // place tweets in array
         if (error) throw error;
         for (let i = 0; i < data.length; i++) {
-            let text = tweets.statuses[i].text;
-            let location = tweets.statuses[i].user.location;
-            obj.arr.push({text: text, location: location});
-            arr.push(text);
-            console.log(arr);
+            //console.log(tweets.statuses[i].text);
+            var tweet = {
+                text: tweets.statuses[i].text,
+                location: tweets.statuses[i].user.location,
+            };
+            allTweets.push(tweet);
         }
-        console.log(tweets.statuses);
+
+        console.log(allTweets);
+
         var next_results_url_params = tweets.search_metadata.next_results;
         if (next_results_url_params == null) return null;
 
         var next_max_id = next_results_url_params.split('max_id=')[1].split('&')[0];
-        //var list = tweets.statuses;
 
         // write tweets to text file
         var fs = require('fs');
 
-        var file = fs.createWriteStream('data/tweets.json', {'flags': 'a'});
+        var file = fs.createWriteStream('data/tweets.txt', {'flags': 'a'});
         file.on('error', function(err) { /* error handling */ });
-        for (let i = 0; i < arr.length; i++) {
-            file.write(arr[i] + '\n');
+        for (let i = 0; i < allTweets.length; i++) {
+            file.write(allTweets[i].text + '\n');
         }
         file.end();
         maxID = next_max_id;
@@ -70,7 +68,7 @@ function retrieveTweetsBatch(token){
         retrieveTweetsBatch(maxID);
 
         //return list + allTweets;
-        return arr;
+        return allTweets;
     });
 };
 

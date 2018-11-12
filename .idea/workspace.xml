@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/analysisCloud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tweets.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/analysis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/googleCloudStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/googleCloudStorage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitterSearchGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitterSearchGet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,22 +19,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="530">
+              <caret line="67" column="35" lean-forward="true" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweets.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tweets.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/tweets.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="5576" column="21" lean-forward="true" selection-start-line="5576" selection-start-column="21" selection-end-line="5576" selection-end-column="21" />
+            <state relative-caret-position="478">
+              <caret line="7035" lean-forward="true" selection-start-line="7035" selection-end-line="7035" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tweets.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tweets.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
@@ -47,10 +50,15 @@
       <file leaf-file-name="googleCloudStorage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="555">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="My First Project-f301f874651b.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="analysis.js" pinned="false" current-in-tab="false">
@@ -67,15 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -109,9 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1059138610442711000</find>
-      <find>next_resu</find>
-      <find>max_id</find>
       <find>n</find>
       <find>Een griepvaccin dat besc</find>
       <find>een g</find>
@@ -138,7 +134,10 @@
       <find>place</find>
       <find>All I want is McDonalds and a Milkshake but rn I cant even keep down a glass of gingerale... stomach flu sucks</find>
       <find>geo</find>
+      <find>Woman Who Claimed</find>
+      <find>Why did we go to</find>
       <find>The flu has gotten me</find>
+      <find>W</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -219,6 +218,11 @@
             <path>
               <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FluPrediction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FluPrediction" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.analysis.js">
+  <component name="RunManager" selected="Node.js.googleCloudStorage.js">
     <configuration name="analysis.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/analysis.js" working-dir="$PROJECT_DIR$" />
     <configuration name="googleCloudStorage.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="googleCloudStorage.js" working-dir="$PROJECT_DIR$" />
     <configuration name="twitterSearchGet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchGet.js" working-dir="$PROJECT_DIR$" />
@@ -298,9 +302,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.analysis.js" />
         <item itemvalue="Node.js.googleCloudStorage.js" />
         <item itemvalue="Node.js.twitterSearchGet.js" />
+        <item itemvalue="Node.js.analysis.js" />
         <item itemvalue="Node.js.twitterStream.js" />
         <item itemvalue="Node.js.twitterSearchPost.js" />
       </list>
@@ -325,7 +329,7 @@
       <workItem from="1541844970532" duration="6519000" />
       <workItem from="1541893760364" duration="5696000" />
       <workItem from="1541961094787" duration="13313000" />
-      <workItem from="1542019294605" duration="7833000" />
+      <workItem from="1542019294605" duration="12274000" />
     </task>
     <task id="LOCAL-00001" summary="Installed node package and created twitter.js">
       <created>1541191148463</created>
@@ -390,11 +394,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541979472738</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changes">
+      <created>1542029125103</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542029125104</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133652000" />
+    <option name="totallyTimeSpent" value="138093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -404,6 +415,7 @@
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5016155" side_tool="true" weight="0.49931034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4983845" weight="0.49931034" />
       <window_info anchor="right" id="Run" order="3" visible="true" weight="0.3069467" />
       <window_info id="npm" order="2" side_tool="true" />
@@ -419,7 +431,6 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960285" weight="0.32965517" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +486,8 @@
     <MESSAGE value="Added AJAX request and POST request, added jQuery lib and other NPM libraries" />
     <MESSAGE value="Implemented function to retrieve all tweets using pagination" />
     <MESSAGE value="Added google cloud api client authentication, added sample text analysis, modified twitterSearch by adding function as module for usage in other JS files, new query." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added google cloud api client authentication, added sample text analysis, modified twitterSearch by adding function as module for usage in other JS files, new query." />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -486,7 +498,7 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="47" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -668,9 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -690,20 +699,10 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/analysisCloud.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -714,12 +713,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="5576" column="21" lean-forward="true" selection-start-line="5576" selection-start-column="21" selection-end-line="5576" selection-end-column="21" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -728,10 +723,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/tweets.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="530">
+          <caret line="67" column="35" lean-forward="true" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="7035" lean-forward="true" selection-start-line="7035" selection-end-line="7035" />
         </state>
       </provider>
     </entry>
