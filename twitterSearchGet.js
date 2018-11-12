@@ -90,5 +90,5 @@ var receiveTweets = function(){
 receiveTweets();
 
 //exports.retrieveTweetsBatch = retrieveTweetsBatch(token);
-exports.receiveTweets = receiveTweets();
+exports.receiveTweets = receiveTweets;
 
