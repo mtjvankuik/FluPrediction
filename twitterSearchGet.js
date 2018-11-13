@@ -49,8 +49,6 @@ var retrieveTweetsBatch = function(token){
             allTweets.push(tweet);
         }
 
-        //console.log(allTweets);
-
         var next_results_url_params = tweets.search_metadata.next_results;
         if (next_results_url_params == null) return null;
 
@@ -62,7 +60,7 @@ var retrieveTweetsBatch = function(token){
         var file = fs.createWriteStream('data/tweets.txt', {'flags': 'a'});
         file.on('error', function(err) { /* error handling */ });
         for (let i = 0; i < allTweets.length; i++) {
-            file.write(allTweets[i].text + '\n');
+            file.write(allTweets[i] + '\n');
         }
         file.end();
 
@@ -71,8 +69,6 @@ var retrieveTweetsBatch = function(token){
 
         retrieveTweetsBatch(maxID);
         console.log(allTweets);
-        //return list + allTweets;
-        //exports.allTweets = allTweets;
         return allTweets;
     });
 };
@@ -88,7 +84,3 @@ var receiveTweets = function(){
 }
 
 receiveTweets();
-
-//exports.retrieveTweetsBatch = retrieveTweetsBatch(token);
-exports.receiveTweets = receiveTweets;
-

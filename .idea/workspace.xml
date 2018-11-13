@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/twitterSearchGet_temp_modules.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/analysis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tweets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/tweets.txt" afterDir="false" />
@@ -20,40 +21,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="3">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitterSearchGet_temp_modules.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitterSearchGet_temp_modules.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1062">
+              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="twitter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3510">
+              <caret line="234" selection-start-line="234" selection-end-line="234" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="tweets.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/tweets.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="googleCloudStorage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="-1395">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="My First Project-f301f874651b.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="analysis.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="analysis.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -65,7 +74,7 @@
       <file leaf-file-name="language_service_client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@google-cloud/language/src/v1/language_service_client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="6330">
               <caret line="434" column="2" selection-start-line="434" selection-start-column="2" selection-end-line="434" selection-end-column="2" />
             </state>
           </provider>
@@ -76,15 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitterStream.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterStream.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -109,8 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>een g</find>
-      <find>url</find>
       <find>request</find>
       <find>post</find>
       <find>json</find>
@@ -139,6 +137,8 @@
       <find>f</find>
       <find>W</find>
       <find>maxID</find>
+      <find>console.lo</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -176,8 +176,10 @@
         <option value="$PROJECT_DIR$/twitterSearchPost.js" />
         <option value="$PROJECT_DIR$/analysisCloud.js" />
         <option value="$PROJECT_DIR$/googleCloudStorage.js" />
+        <option value="$PROJECT_DIR$/data/locations.txt" />
         <option value="$PROJECT_DIR$/data/tweets.txt" />
         <option value="$PROJECT_DIR$/analysis.js" />
+        <option value="$PROJECT_DIR$/twitterSearchGet_temp_modules.js" />
         <option value="$PROJECT_DIR$/twitterSearchGet.js" />
       </list>
     </option>
@@ -210,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,7 +258,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,13 +269,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/data" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,23 +294,23 @@
     <configuration name="analysis.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/analysis.js" working-dir="$PROJECT_DIR$" />
     <configuration name="googleCloudStorage.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="googleCloudStorage.js" working-dir="$PROJECT_DIR$" />
     <configuration name="twitterSearchGet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchGet.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="twitterSearchPost.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchPost.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="twitterSearchGet_temp_modules.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="twitterSearchGet_temp_modules.js" working-dir="$PROJECT_DIR$" />
     <configuration name="twitterStream.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="twitterStream.js" working-dir="$PROJECT_DIR$" />
     <list>
       <item itemvalue="Node.js.bin/www" />
       <item itemvalue="Node.js.twitterSearchGet.js" />
-      <item itemvalue="Node.js.twitterSearchPost.js" />
       <item itemvalue="Node.js.twitterStream.js" />
       <item itemvalue="Node.js.googleCloudStorage.js" />
       <item itemvalue="Node.js.analysis.js" />
+      <item itemvalue="Node.js.twitterSearchGet_temp_modules.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.analysis.js" />
+        <item itemvalue="Node.js.twitterSearchGet_temp_modules.js" />
         <item itemvalue="Node.js.twitterSearchGet.js" />
         <item itemvalue="Node.js.googleCloudStorage.js" />
         <item itemvalue="Node.js.twitterStream.js" />
-        <item itemvalue="Node.js.twitterSearchPost.js" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +333,9 @@
       <workItem from="1541844970532" duration="6519000" />
       <workItem from="1541893760364" duration="5696000" />
       <workItem from="1541961094787" duration="13313000" />
-      <workItem from="1542019294605" duration="26465000" />
+      <workItem from="1542019294605" duration="29424000" />
+      <workItem from="1542062209417" duration="3417000" />
+      <workItem from="1542100074698" duration="4551000" />
     </task>
     <task id="LOCAL-00001" summary="Installed node package and created twitter.js">
       <created>1541191148463</created>
@@ -410,23 +414,36 @@
       <option name="project" value="LOCAL" />
       <updated>1542033714163</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Modifications to twittersearch and analysis">
+      <created>1542059181475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542059181475</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Removed typo">
+      <created>1542059257060</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542059257060</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152284000" />
+    <option name="totallyTimeSpent" value="163211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25496426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2673667" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5016155" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4983845" weight="0.49931034" />
-      <window_info anchor="right" id="Run" order="3" weight="0.5250404" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.28756058" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49960285" weight="0.3351724" />
@@ -440,6 +457,7 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960285" weight="0.32965517" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +515,9 @@
     <MESSAGE value="Added google cloud api client authentication, added sample text analysis, modified twitterSearch by adding function as module for usage in other JS files, new query." />
     <MESSAGE value="Changes" />
     <MESSAGE value="Implemented tweet objects and tweet collection in array, added location parameter in object, added location to query" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented tweet objects and tweet collection in array, added location parameter in object, added location to query" />
+    <MESSAGE value="Modifications to twittersearch and analysis" />
+    <MESSAGE value="Removed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -509,24 +529,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/analysis.js</url>
-          <line>31</line>
-          <properties lambdaOrdinal="-1" />
+          <line>39</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/analysis.js</url>
-          <line>12</line>
-          <properties lambdaOrdinal="-1" />
+          <line>20</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/analysis.js</url>
-          <line>3</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="56" />
+          <line>12</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="68" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -539,8 +556,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/lib/Twitter.js" />
     <entry file="file://$PROJECT_DIR$/data/twitterExampleCalls.js" />
     <entry file="file://$PROJECT_DIR$/data/twitter_config.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -669,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3405">
-          <caret line="227" column="2" selection-start-line="227" selection-start-column="2" selection-end-line="227" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/request/request.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16245">
@@ -696,9 +704,6 @@
           <caret line="579" column="15" selection-start-line="579" selection-start-column="15" selection-end-line="579" selection-end-column="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@google-cloud/storage/build/src/storage.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,10 +741,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysisCloud.js">
+    <entry file="file://$PROJECT_DIR$/data/tweets.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@google-cloud/language/src/v1/language_service_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="6330">
+          <caret line="434" column="2" selection-start-line="434" selection-start-column="2" selection-end-line="434" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -750,23 +756,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@google-cloud/language/src/v1/language_service_client.js">
+    <entry file="file://$PROJECT_DIR$/analysisCloud.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="434" column="2" selection-start-line="434" selection-start-column="2" selection-end-line="434" selection-end-column="2" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
+    <entry file="file://$PROJECT_DIR$/node_modules/twitter/lib/twitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
+    <entry file="file://$PROJECT_DIR$/data/locations.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="-1395">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -774,6 +787,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet_temp_modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
         </state>
       </provider>
     </entry>

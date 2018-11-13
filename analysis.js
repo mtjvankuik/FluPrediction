@@ -1,9 +1,17 @@
 // environment variables (see .env)
 require('dotenv').config();
-var twitter = require('./twitterSearchGet');
-
+var twitter = require('./twitterSearchGet_temp_modules');
 twitter.receiveTweets();
+var arr = twitter.tweets;
 
+console.log(arr);
+
+//console.log(twitter.retrieve());
+//console.log(twitter.receiveTweets());
+//console.log(twitter.allTweets);
+
+// var test = twitter.receiveTweets();
+// console.log(test);
 
 // Imports the Google Cloud client library
 const language = require('@google-cloud/language');
@@ -34,9 +42,9 @@ var fs  = require("fs");
 var path = 'data/tweets.txt';
 var tweets = fs.readFileSync(path).toString().split('\n');
 console.log(tweets);
-// Prepares a document, representing the provided text
+//Prepares a document, representing the provided text
 const document = {
-    content: tweets,
+    content: text,
     type: 'PLAIN_TEXT',
 };
 
