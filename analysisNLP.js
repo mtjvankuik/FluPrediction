@@ -3,15 +3,7 @@ require('dotenv').config();
 var twitter = require('./twitterSearchGet_temp_modules');
 twitter.receiveTweets();
 var arr = twitter.tweets;
-
-console.log(arr);
-
-//console.log(twitter.retrieve());
-//console.log(twitter.receiveTweets());
-//console.log(twitter.allTweets);
-
-// var test = twitter.receiveTweets();
-// console.log(test);
+//console.log(arr);
 
 // Imports the Google Cloud client library
 const language = require('@google-cloud/language');

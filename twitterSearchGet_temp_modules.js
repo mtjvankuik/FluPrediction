@@ -31,8 +31,8 @@
             geocode: '54.161342,-1.985778,600km',
             max_id: maxID,
         }, function (error, tweets, response) {
-            // waarschijnlijk error vanwege callback functie e.g. asynchronous vs synchronous function
             var allTweets = [];
+            var write = true;
 
             // return obj
             var data = tweets.statuses;
@@ -42,30 +42,37 @@
 
             for (let i = 0; i < data.length; i++) {
                 //console.log(tweets.statuses[i].text);
+                var text = tweets.statuses[i].text;
+                var exclURL = text.replace(/(?:https?|ftp):\/\/[\n\S]+/g,'');
+                var exclUser = exclURL.replace(/@\S+/g,'');
+                var addSpace = exclUser.replace(/(\n)+/g,' ');
+                //\\r\\n|\\r|\\n)+
                 var tweet = {
-                    text: tweets.statuses[i].text,
+                    text: addSpace,
                     location: tweets.statuses[i].user.location,
                 };
                 allTweets.push(tweet);
             }
 
             //console.log(allTweets);
-
+            console.log(tweets.statuses);
             var next_results_url_params = tweets.search_metadata.next_results;
             if (next_results_url_params == null) return null;
 
             var next_max_id = next_results_url_params.split('max_id=')[1].split('&')[0];
 
-            //write tweets to text file
-            var fs = require('fs');
+            //write tweets to csv file
+            if(write) {
+                var fs = require('fs');
 
-            var file = fs.createWriteStream('data/tweets.txt', {'flags': 'w'});
-            file.on('error', function (err) { /* error handling */
-            });
-            for (let i = 0; i < allTweets.length; i++) {
-                file.write(allTweets[i].text + '\n');
+                var file = fs.createWriteStream('data/tweets.csv', {'flags': 'a', 'encoding': 'utf8'});
+                file.on('error', function (err) { /* error handling */
+                });
+                for (let i = 0; i < allTweets.length; i++) {
+                    file.write('"' + allTweets[i].text + '"' + ',' + '"' + allTweets[i].location + '"' + '\n');
+                }
+                file.end();
             }
-            file.end();
 
             // replace next token with new maxID
             maxID = next_max_id;
