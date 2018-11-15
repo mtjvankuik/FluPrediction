@@ -1,9 +1,5 @@
 // environment variables (see .env)
 require('dotenv').config();
-var twitter = require('./twitterSearchGet_temp_modules');
-twitter.receiveTweets();
-var arr = twitter.tweets;
-//console.log(arr);
 
 // Imports the Google Cloud client library
 const language = require('@google-cloud/language');
@@ -39,22 +35,3 @@ const document = {
     content: text,
     type: 'PLAIN_TEXT',
 };
-
-// Classifies text in the document
-for (var i = 0; i < 10; i++) {
-    client
-        .classifyText({document: document})
-        .then(results => {
-            const classification = results[0];
-
-            console.log('Categories:');
-            classification.categories.forEach(category => {
-                console.log(
-                    `Name: ${category.name}, Confidence: ${category.confidence}`
-                );
-            });
-        })
-        .catch(err => {
-            console.error('ERROR:', err);
-        });
-}

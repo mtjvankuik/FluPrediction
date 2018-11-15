@@ -1,6 +1,8 @@
 const automl = require(`@google-cloud/automl`);
 const fs = require(`fs`);
 
+//export GOOGLE_APPLICATION_CREDENTIALS="authentication/My First Project-f301f874651b.json";
+
 // Create client for prediction service.
 const client = new automl.v1beta1.PredictionServiceClient();
 
@@ -9,11 +11,17 @@ const client = new automl.v1beta1.PredictionServiceClient();
  */
     const projectId = 'sacred-portal-221219';
     const computeRegion = 'europe-west1';
-    const modelId = 'id of the model, e.g. “ICN12345”';
-    const filePath = 'tweets.txt"';
+    const modelId = 'TCN2178296190980122533';
+    const filePath = 'data/tweets.csv';
 
     // Get the full path of the model.
 const modelFullId = client.modelPath(projectId, computeRegion, modelId);
+
+var twitter = require('twitterSearchGet');
+
+twitter.receiveTweets(function (tweets) {
+        console.log(tweets);
+});
 
 // Read the file content for prediction.
 const snippet = fs.readFileSync(filePath, `utf8`);

@@ -2,7 +2,7 @@
 require('dotenv').config();
 require('http');
 
-twitter = require('./twitterSearchGet');
+//twitter = require('./twitterSearchGet');
 
 var data = twitter.receiveTweets();
 //console.log(fludata);
@@ -26,7 +26,7 @@ storage
     .getBuckets()
     .then((results) => {
         const buckets = results[0];
-        buckets.push(tweets);
+        //buckets.push(tweets);
 
         console.log('Buckets:');
         buckets.forEach((bucket) => {

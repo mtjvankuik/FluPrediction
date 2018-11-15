@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@google-cloud/automl": "^0.1.2",
     "@google-cloud/language": "^2.0.0",
     "@google-cloud/storage": "^2.3.0",
     "ajax-request": "^1.2.3",
