@@ -16,7 +16,10 @@ var cityStatus2 = {
 array.push(cityStatus1);
 array.push(cityStatus2);
 
+//zonder auth
 google.setOnLoadCallback(drawRegionsMap);
+
+//google.charts.setOnLoadCallback(drawRegionsMap);
 
 function drawRegionsMap() {
     //create new data table
@@ -37,7 +40,7 @@ function drawRegionsMap() {
         resolution: 'provinces',
         displayMode: 'markers',
         markerOpacity : 0.8,
-        sizeAxis: {minSize:2,  maxSize: 5},
+        //sizeAxis: {minSize:2,  maxSize: 5},
         colorAxis: {colors: ['#b6e757', '#e05923']}
     };
 
@@ -46,3 +49,16 @@ function drawRegionsMap() {
     chart.draw(data, options);
 }
 
+
+
+
+// environment variables (see .env)
+//require('dotenv').config();
+
+// google.charts.load('current', {
+//     'packages': ['geochart'],
+//     // Note: you will need to get a mapsApiKey for your project.
+//     // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+//     'mapsApiKey': 'AIzaSyA9RNP4ksFWb5Du48Ngghae8Jhg8Ia3oKY'
+//     //'mapsApiKey': process.env.MAPS_API_KEY
+// });
