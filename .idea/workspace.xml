@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="">
+    <list default="true" id="66fece05-a62d-4078-9b7f-5c92500f7d26" name="Default" comment="Updated region to us-central1">
+      <change afterPath="$PROJECT_DIR$/data/tweets_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tweets_test_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysisAutoML.js" beforeDir="false" afterPath="$PROJECT_DIR$/analysisAutoML.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysisNLP.js" beforeDir="false" afterPath="$PROJECT_DIR$/analysisNLP.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/googleCloudStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/googleCloudStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterSearchGet_temp_modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitterSearchGet_temp_modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterSearchGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitterSearchGet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,42 +25,8 @@
       <file leaf-file-name="twitterSearchGet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitterSearchGet_temp_modules.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterSearchGet_temp_modules.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="31" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tweets.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/tweets.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-2769" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tweets.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/tweets.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analysisNLP.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysisNLP.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="423">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -75,11 +40,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analysisAutoML.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tweets_test.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tweets_test.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tweets_test_2.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tweets_test_2.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="133" lean-forward="true" selection-start-line="5" selection-start-column="133" selection-end-line="5" selection-end-column="133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analysisNLP.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analysisNLP.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analysisAutoML.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analysisAutoML.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="438">
+              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitterSearchPost.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tweets.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tweets.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-74105">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tweets.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tweets.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -87,20 +106,6 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maps.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="googleCloudStorage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -114,9 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>als je een griep</find>
-      <find>Bij deze weiger</find>
-      <find>Bij deze weiger ik de pol</find>
       <find>Het Tra</find>
       <find>Het Traumacentrum Zuidwest</find>
       <find>Zaak aangehouden,</find>
@@ -144,6 +146,9 @@
       <find>positive</find>
       <find>@</find>
       <find>console.log</find>
+      <find>retrieve</find>
+      <find>jab</find>
+      <find>Lemsip</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,7 +186,6 @@
         <option value="$PROJECT_DIR$/twitterSearchPost.js" />
         <option value="$PROJECT_DIR$/analysisCloud.js" />
         <option value="$PROJECT_DIR$/data/locations.txt" />
-        <option value="$PROJECT_DIR$/twitterSearchGet.js" />
         <option value="$PROJECT_DIR$/analysis.js" />
         <option value="$PROJECT_DIR$/data/tweets.txt" />
         <option value="$PROJECT_DIR$/data/tweetslabeled.csv" />
@@ -189,9 +193,12 @@
         <option value="$PROJECT_DIR$/views/importtest.js" />
         <option value="$PROJECT_DIR$/views/test.js" />
         <option value="$PROJECT_DIR$/twitterSearchGet_temp_modules.js" />
-        <option value="$PROJECT_DIR$/analysisAutoML.js" />
         <option value="$PROJECT_DIR$/analysisNLP.js" />
         <option value="$PROJECT_DIR$/googleCloudStorage.js" />
+        <option value="$PROJECT_DIR$/data/tweets_test.csv" />
+        <option value="$PROJECT_DIR$/data/tweets_test_2.csv" />
+        <option value="$PROJECT_DIR$/twitterSearchGet.js" />
+        <option value="$PROJECT_DIR$/analysisAutoML.js" />
       </list>
     </option>
   </component>
@@ -286,12 +293,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/../nodejstestfiles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/routes" />
-      <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -307,7 +315,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.bin/www">
+  <component name="RunManager" selected="Node.js.analysisAutoML.js">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FluPrediction/index.html" />
     <configuration name="analysisAutoML.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="analysisAutoML.js" working-dir="$PROJECT_DIR$" />
     <configuration name="analysisNLP.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/analysisNLP.js" working-dir="$PROJECT_DIR$" />
     <configuration name="googleCloudStorage.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="googleCloudStorage.js" working-dir="$PROJECT_DIR$" />
@@ -315,19 +324,19 @@
     <configuration name="twitterSearchGet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/twitterSearchGet.js" working-dir="$PROJECT_DIR$" />
     <list>
       <item itemvalue="Node.js.bin/www" />
-      <item itemvalue="Node.js.twitterSearchGet.js" />
       <item itemvalue="Node.js.googleCloudStorage.js" />
       <item itemvalue="Node.js.analysisNLP.js" />
       <item itemvalue="Node.js.twitterSearchGet.js" />
       <item itemvalue="Node.js.analysisAutoML.js" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.analysisAutoML.js" />
         <item itemvalue="Node.js.twitterSearchGet.js" />
-        <item itemvalue="Node.js.analysisNLP.js" />
-        <item itemvalue="Node.js.twitterSearchGet.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.googleCloudStorage.js" />
+        <item itemvalue="Node.js.analysisNLP.js" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +363,9 @@
       <workItem from="1542062209417" duration="3417000" />
       <workItem from="1542100074698" duration="16111000" />
       <workItem from="1542197299433" duration="2717000" />
-      <workItem from="1542273121699" duration="3967000" />
+      <workItem from="1542273121699" duration="8208000" />
+      <workItem from="1542285784752" duration="14401000" />
+      <workItem from="1542355126435" duration="20148000" />
     </task>
     <task id="LOCAL-00001" summary="Installed node package and created twitter.js">
       <created>1541191148463</created>
@@ -461,28 +472,41 @@
       <option name="project" value="LOCAL" />
       <updated>1542127078264</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Removed old twitter request file, removed deprecated files">
+      <created>1542279133519</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1542279133519</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated region to us-central1">
+      <created>1542310477204</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1542310477204</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181455000" />
+    <option name="totallyTimeSpent" value="220245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27059773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2700556" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5016155" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32827586" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50277996" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4983845" weight="0.49931034" />
-      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.28756058" />
+      <window_info anchor="right" id="Run" order="3" weight="0.404685" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49960285" weight="0.3351724" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4983845" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49722" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -491,7 +515,30 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960285" weight="0.32965517" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="right" id="Run" order="3" weight="0.58239096" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27059773" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32827586" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4983845" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49960285" weight="0.3351724" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5016155" side_tool="true" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4983845" weight="0.49931034" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960285" weight="0.32965517" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -552,7 +599,9 @@
     <MESSAGE value="Removed typo" />
     <MESSAGE value="Added function to retrieve tweet array in callback" />
     <MESSAGE value="Added regex for only text extraction, added Google AutoML API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added regex for only text extraction, added Google AutoML API" />
+    <MESSAGE value="Removed old twitter request file, removed deprecated files" />
+    <MESSAGE value="Updated region to us-central1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated region to us-central1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -573,7 +622,7 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="69" />
+      <option name="time" value="80" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -586,10 +635,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/README.md" />
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/twitter-node-client/lib/Twitter.js" />
     <entry file="file://$PROJECT_DIR$/data/twitterExampleCalls.js" />
     <entry file="file://$PROJECT_DIR$/data/twitter_config.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/twitter/.eslintrc.js">
@@ -732,20 +777,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/locations.txt" />
-    <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/tweetslabeled.csv" />
     <entry file="file://$PROJECT_DIR$/data/tweets.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-65390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nodejstestfiles/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/error.pug">
@@ -758,47 +793,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="31" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
+    <entry file="file://$PROJECT_DIR$/authentication/sacred-portal-221219-6909954c3dda.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="118" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maps.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nodejstestfiles/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication/My First Project-f301f874651b.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/maps.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/tweets.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="2926" column="29" selection-start-line="2926" selection-start-column="29" selection-end-line="2926" selection-end-column="29" />
+    <entry file="file://$PROJECT_DIR$/data/tweets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tweets_test.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-2769" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysisAutoML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysisNLP.js">
+    <entry file="file://$PROJECT_DIR$/twitterSearchPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="450">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -809,24 +866,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterSearchGet_temp_modules.js">
+    <entry file="file://$PROJECT_DIR$/data/tweets.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-74105">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="2926" column="29" selection-start-line="2926" selection-start-column="29" selection-end-line="2926" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tweets_test_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="133" lean-forward="true" selection-start-line="5" selection-start-column="133" selection-end-line="5" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysisNLP.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="31" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="31" />
+        <state relative-caret-position="525">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterSearchGet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="423">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleCloudStorage.js">
+    <entry file="file://$PROJECT_DIR$/analysisAutoML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="438">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
         </state>
       </provider>
     </entry>

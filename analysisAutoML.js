@@ -5,11 +5,7 @@ const fs = require('fs');
 
 const automl = require('@google-cloud/automl');
 
-// var twitter = require('./twitterSearchGet');
-//
-// twitter.receiveTweets(function (tweets) {
-//     console.log(tweets);
-// });
+var twitter = require('./twitterSearchGet');
 
 const client = new automl.PredictionServiceClient({
     projectId: 'sacred-portal-221219',
@@ -17,38 +13,78 @@ const client = new automl.PredictionServiceClient({
 });
 
 /**
- *
+ *  Connection and authorization Google
+ *  Prediction on new tweets
+ *  @Return Array of tweets classified by model as flu.
  */
-    const projectId = 'sacred-portal-221219';
-    const computeRegion = 'us-central1';
-    const modelId = 'TCN2178296190980122533';
-    const filePath = 'data/tweets_test.csv';
+const projectId = 'sacred-portal-221219';
+const computeRegion = 'us-central1';
+const modelId = 'TCN2178296190980122533';
+const filePath = 'data/tweets_test_2.csv';
 
-    // Get the full path of the model.
+// Get the full path of the model.
 const modelFullId = client.modelPath(projectId, computeRegion, modelId);
 
+twitter.retrieveTweetsBatch(null,function(tweets) {
+
 // Read the file content for prediction.
-const snippet = fs.readFileSync(filePath, 'utf8');
+    const snippet = fs.readFileSync(filePath, 'utf8');
+
+    //console.log(tweets);
+    var predict = function (callback) {
+        //console.log(tweets)
+        tweets.forEach(function (tweet,i) {
 
 // Set the payload by giving the content and type of the file.
-const payload = {
-    textSnippet: {
-        content: snippet,
-        mimeType: `text/plain`,
-    },
-};
+            const payload = {
+                textSnippet: {
+                    content: tweet.text,
+                    mimeType: `text/plain`,
+                },
+            };
+
 
 // Params is additional domain-specific parameters.
 // Currently there is no additional parameters supported.
-client
-    .predict({name: modelFullId, payload: payload, params: {}})
-    .then(responses => {
-        console.log(`Prediction results:`);
-        responses[0].payload.forEach(result => {
-            console.log(`Predicted class name: ${result.displayName}`);
-            console.log(`Predicted class score: ${result.classification.score}`);
-        });
+            client
+                .predict({name: modelFullId, payload: payload, params: {}})
+                .then(responses => {
+                    //console.log(`Prediction results:`);
+                    responses[0].payload.forEach(result => {
+                        var num = 0.9;
+                        var labelr = "noflu";
+                        var score = result.classification.score;
+                        var label = result.displayName;
+
+                        if (score > num) {
+                            if (label === labelr) {
+                                tweets.splice(tweets.indexOf(tweet),1);
+
+                                if ((tweets.length - 1) === i){
+                                    callback(tweets);
+                                    //console.log(tweets);
+                                }
+
+                            }
+                        }
+
+                        //console.log(`Predicted class name: ${result.displayName}`);
+                        //console.log(`Predicted class score: ${result.classification.score}`);
+                    });
+
+                })
+                .catch(err => {
+                    console.error(err);
+                });
+
+        })
+        console.log(tweets);
+
+    }
+
+    predict(function (callback) {
+        //console.log(callback);
     })
-    .catch(err => {
-        console.error(err);
-    });
+
+});
+

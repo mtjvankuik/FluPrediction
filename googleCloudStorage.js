@@ -4,11 +4,11 @@ require('http');
 
 //twitter = require('./twitterSearchGet');
 
-var data = twitter.receiveTweets();
-//console.log(fludata);
-var fs  = require("fs");
-var path = 'data/tweets.txt';
-var tweets = fs.readFileSync(path).toString().split('\n');
+// var data = twitter.receiveTweets();
+// //console.log(fludata);
+// var fs  = require("fs");
+// var path = 'data/tweets.txt';
+// var tweets = fs.readFileSync(path).toString().split('\n');
 
 // Imports the Google Cloud client library.
 const {Storage} = require('@google-cloud/storage');
