@@ -28,10 +28,9 @@ const modelFullId = client.modelPath(projectId, computeRegion, modelId);
 twitter.retrieveTweetsBatch(null,function(tweets) {
 
 // Read the file content for prediction.
-    const snippet = fs.readFileSync(filePath, 'utf8');
 
     //console.log(tweets);
-    var predict = function (callback) {
+    function prediction (callback) {
         //console.log(tweets)
         tweets.forEach(function (tweet,i) {
 
@@ -78,13 +77,9 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
                 });
 
         })
-        console.log(tweets);
+        //console.log(tweets);
 
     }
-
-    predict(function (callback) {
-        //console.log(callback);
-    })
-
+    exports.prediction = prediction;
 });
 

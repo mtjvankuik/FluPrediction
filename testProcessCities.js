@@ -1,5 +1,11 @@
 var fs = require("fs");
 
+var flucases = require('./analysisAutoML');
+
+flucases.prediction(function (tweets) {
+    console.log(tweets);
+})
+
 var text = fs.readFileSync("data/CitiesUK.txt").toString('utf-8');
 var textByLine = text.split("\n");
 
