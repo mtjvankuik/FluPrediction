@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const automl = require('@google-cloud/automl');
 
-var twitter = require('./twitterSearchGet');
+const twitter = require('./twitterSearchGet');
 
 const client = new automl.PredictionServiceClient({
     projectId: 'sacred-portal-221219',
@@ -20,7 +20,7 @@ const client = new automl.PredictionServiceClient({
 const projectId = 'sacred-portal-221219';
 const computeRegion = 'us-central1';
 const modelId = 'TCN2178296190980122533';
-const filePath = 'data/tweets_test_2.csv';
+//const filePath = 'data/tweets_test_2.csv';
 
 // Get the full path of the model.
 const modelFullId = client.modelPath(projectId, computeRegion, modelId);
@@ -30,7 +30,7 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
 // Read the file content for prediction.
 
     //console.log(tweets);
-    function prediction (callback) {
+    function prediction(callback) {
         //console.log(tweets)
         tweets.forEach(function (tweet,i) {
 
@@ -58,9 +58,12 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
                         if (score > num) {
                             if (label === labelr) {
                                 tweets.splice(tweets.indexOf(tweet),1);
-
+                                //console.log(tweets);
                                 if ((tweets.length - 1) === i){
+
+                                    //getTweets(tweets);
                                     callback(tweets);
+                                    //console.log(tweets);
                                     //console.log(tweets);
                                 }
 
@@ -80,6 +83,17 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
         //console.log(tweets);
 
     }
+
+    function tweetsToMap(callback){
+        prediction(function (preds) {
+            callback(preds);
+            //console.log(preds);
+        })
+    }
+    tweetsToMap();
+
+
     exports.prediction = prediction;
+    exports.tweetsToMap = tweetsToMap;
 });
 
