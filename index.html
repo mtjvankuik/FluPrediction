@@ -4,7 +4,10 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+
         function loadJSON(callback) {
+
+
             var xobj = new XMLHttpRequest();
             xobj.overrideMimeType("application/json");
             xobj.open('GET', 'data/cities.json', true);
@@ -56,14 +59,11 @@
                 chart.draw(data, options);
             }
         });
-
-
-
-
+        
     </script>
 </head>
 <body>
-<div id="regions_div" style="width: 900px; height: 500px;"></div>
+<div id="regions_div" style="width: auto; height: auto;"></div>
 </body>
 </html>
 
