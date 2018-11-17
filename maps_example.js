@@ -1,5 +1,26 @@
+// //Array for the list of cities + their count
+var array = [];
+//
+// //Make objects where cityStatus is stored
+var cityStatus1 = {
+    cityName: "London",
+    count: 100,
+};
 
-function makeMap(array) {
+var cityStatus2 = {
+    cityName: "Leeds",
+    count: 70,
+};
+
+//push these statuses in the array to use in the map
+array.push(cityStatus1);
+array.push(cityStatus2);
+
+
+//function makeMap(array) {
+    //google.setOnLoadCallback(drawRegionsMap);
+
+//google.charts.setOnLoadCallback(drawRegionsMap);
 google.charts.load('current', {
     'packages':['geochart'],
     // Note: you will need to get a mapsApiKey for your project.
@@ -19,7 +40,7 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 
         //add the values to the columns
         for (let i = 0; i < array.length; i++) {
-            data.addRows([[array[i].location, array[i].count]]);
+            data.addRows([[array[i].cityName, array[i].count]]);
         }
 
         //change the default settings in map
@@ -36,5 +57,4 @@ google.charts.setOnLoadCallback(drawRegionsMap);
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
         chart.draw(data, options);
     }
-}
-exports.makeMap = makeMap;
+//}

@@ -13,15 +13,23 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //assuming app is express Object.
-app.get('/',function(req,res){
+app.get('/index.html',function(req,res){
+    //res.sendFile('./analysisAutoML.js');
     res.sendFile(path.join(__dirname+'/index.html'));
     //__dirname : It will resolve to your project folder.
 });
+
+// app.get('/maps.js',function(req,res){
+//     //res.sendFile('./analysisAutoML.js');
+//     res.sendFile(path.join(__dirname+'/index.html'));
+//     //__dirname : It will resolve to your project folder.
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use("/", express.static(__dirname + "/"));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

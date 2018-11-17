@@ -1,5 +1,5 @@
 // environment variables (see .env)
-require('dotenv').config();
+//require('dotenv').config();
 
 const fs = require('fs');
 
@@ -90,6 +90,7 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
             //callback(preds);
             //console.log(preds);
             //console.log(preds);
+            console.log(preds);
             var fs = require("fs");
             var text = fs.readFileSync("data/CitiesUK.txt").toString('utf-8');
             var textByLine = text.split("\n");
@@ -117,7 +118,7 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
                 cities[i].count = count;
             }
             console.log(cities);
-            //map.makeMap(cities);
+            map.makeMap(cities);
             //console.log(cities);
         })
     }
