@@ -26,7 +26,7 @@ Glasgow
 Gloucester
 Hereford
 Inverness
-Kingston upon Hull
+Kingston
 Lancaster
 Leeds
 Leicester
@@ -34,9 +34,9 @@ Lichfield
 Lincoln
 Lisburn
 Liverpool
-City of London
+London
 Manchester
-Newcastle upon Tyne
+Newcastle
 Newport
 Newry
 Norwich
@@ -62,8 +62,4 @@ Swansea
 Truro
 Wakefield
 Wells
-City of Westminster
-Winchester
-Wolverhampton
-Worcester
-York
+rk
