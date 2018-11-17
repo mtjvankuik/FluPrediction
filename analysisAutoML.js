@@ -7,6 +7,7 @@ const automl = require('@google-cloud/automl');
 
 const twitter = require('./twitterSearchGet');
 
+
 const client = new automl.PredictionServiceClient({
     projectId: 'sacred-portal-221219',
     keyFilename: 'authentication/sacred-portal-221219-6909954c3dda.json'
@@ -58,7 +59,6 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
                         if (score > num) {
                             if (label === labelr) {
                                 tweets.splice(tweets.indexOf(tweet),1);
-                                //console.log(tweets);
                                 if ((tweets.length - 1) === i){
 
                                     //getTweets(tweets);
@@ -84,16 +84,46 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
 
     }
 
-    function tweetsToMap(callback){
+    function countFlu(){
         prediction(function (preds) {
-            callback(preds);
+            //var map = require('maps');
+            //callback(preds);
             //console.log(preds);
+            //console.log(preds);
+            var fs = require("fs");
+            var text = fs.readFileSync("data/CitiesUK.txt").toString('utf-8');
+            var textByLine = text.split("\n");
+            //var tweets = preds;
+            //console.log(tweets);
+            var cities = [];
+
+            //format text
+            for(let i = 0; i < textByLine.length; i++) {
+                textByLine[i] = textByLine[i].replace('\r','').toLowerCase();
+                var tweet = {
+                    location: textByLine[i],
+                    count: 0
+                }
+                cities.push(tweet)
+            }
+
+            for (var i = 0; i < cities.length; i++) {
+                var count = 0;
+                preds.find(function (item) {
+                    if (item.location.toLowerCase().includes(cities[i].location)){
+                        count++;
+                    }
+                })
+                cities[i].count = count;
+            }
+            console.log(cities);
+            //map.makeMap(cities);
+            //console.log(cities);
         })
     }
-    tweetsToMap();
-
+    countFlu();
 
     exports.prediction = prediction;
-    exports.tweetsToMap = tweetsToMap;
+    exports.countFlu = countFlu;
 });
 
