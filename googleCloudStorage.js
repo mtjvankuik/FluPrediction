@@ -1,3 +1,7 @@
+/**
+ * Not written by group, origin code : Google cloud storage  -->  https://cloud.google.com/storage/docs/how-to
+ */
+
 // environment variables (see .env)
 require('dotenv').config();
 require('http');

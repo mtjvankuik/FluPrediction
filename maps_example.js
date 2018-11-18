@@ -1,3 +1,7 @@
+/**
+ * Written by group
+ */
+
 // //Array for the list of cities + their count
 var array = [];
 //

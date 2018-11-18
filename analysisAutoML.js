@@ -1,3 +1,7 @@
+/**
+ * Partly written by group, origin additional code : Google AutoML manual  -->  https://cloud.google.com/natural-language/automl/docs/predict
+ */
+
 // environment variables (see .env)
 require('dotenv').config();
 
@@ -131,5 +135,3 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
     exports.prediction = prediction;
 
 });
-
-exports.retrieveTweetsBatch = retrieveTweetsBatch;

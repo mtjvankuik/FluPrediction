@@ -1,3 +1,6 @@
+/**
+ * Partly written by group (added index.html), origin additional code : automatically generated with project
+ */
 require('dotenv').config();
 
 var createError = require('http-errors');

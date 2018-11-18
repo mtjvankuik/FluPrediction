@@ -1,3 +1,7 @@
+/**
+ * Written by group
+*/
+
 // environment variables (see .env)
 require('dotenv').config();
 

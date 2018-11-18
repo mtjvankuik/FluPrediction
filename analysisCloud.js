@@ -1,5 +1,8 @@
 // Imports the Google Cloud client library.
 const language = require('@google-cloud/language');
+/**
+ * Not written by group, origin code : Google cloud storage  -->  https://cloud.google.com/storage/docs/how-to
+ */
 
 // Creates a client.
 const client = new language.LanguageServiceClient();

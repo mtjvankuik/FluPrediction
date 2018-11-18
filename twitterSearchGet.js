@@ -1,3 +1,7 @@
+/**
+ * Partly written by group, origin additional code : https://www.npmjs.com/package/twitter
+ */
+
 // environment variables (see .env)
     require('dotenv').config();
 

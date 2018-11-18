@@ -1,3 +1,7 @@
+/**
+ * Written by group
+ */
+
 var fs = require("fs");
 var text = fs.readFileSync("data/CitiesUK.txt").toString('utf-8');
 

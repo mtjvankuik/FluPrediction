@@ -1,4 +1,8 @@
 /**
+ * Written by group
+ */
+
+/**
  * Reads JSON array file of cities and flu count
  * @param callback
  * @return JSON array
