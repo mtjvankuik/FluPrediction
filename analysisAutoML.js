@@ -1,14 +1,11 @@
-//load  environment variables (see .env)
+// environment variables (see .env)
 require('dotenv').config();
 
 const fs = require('fs');
-
-//Load google autoML functions
 const automl = require('@google-cloud/automl');
-//Load function for retrieving tweets
 const twitter = require('./twitterSearchGet');
 
-//create client object
+
 const client = new automl.PredictionServiceClient({
     projectId: 'sacred-portal-221219',
     keyFilename: 'authentication/sacred-portal-221219-6909954c3dda.json'
@@ -27,15 +24,15 @@ const modelId = 'TCN2178296190980122533';
 // Get the full path of the model.
 const modelFullId = client.modelPath(projectId, computeRegion, modelId);
 
+twitter.retrieveTweetsBatch(null,function(tweets) {
 
-twitter.retrieveTweetsBatch(null, function (tweets) {
+// Read the file content for prediction.
 
-    // Read the file content for prediction.
     function prediction(callback) {
+        //console.log(tweets)
+        tweets.forEach(function (tweet,i) {
 
-        tweets.forEach(function (tweet, i) {
-
-        // Set the payload by giving the content and type of the file.
+            // Set the payload by giving the content and type of the file.
             const payload = {
                 textSnippet: {
                     content: tweet.text,
@@ -43,6 +40,13 @@ twitter.retrieveTweetsBatch(null, function (tweets) {
                 },
             };
 
+            var promise = new Promise(function(resolve, reject) {
+                setTimeout(function() {
+                    resolve();
+                }, 800);
+            });
+
+            promise.then(function() {
 
             // Params is additional domain-specific parameters.
             // Currently there is no additional parameters supported.
@@ -58,11 +62,10 @@ twitter.retrieveTweetsBatch(null, function (tweets) {
 
                         if (score > num) {
                             if (label === labelr) {
-                                tweets.splice(tweets.indexOf(tweet), 1);
-                                if ((tweets.length - 1) === i) {
+                                tweets.splice(tweets.indexOf(tweet),1);
+                                if ((tweets.length - 1) === i){
                                     callback(tweets);
                                 }
-
                             }
                         }
 
@@ -74,21 +77,21 @@ twitter.retrieveTweetsBatch(null, function (tweets) {
                 .catch(err => {
                     console.error(err);
                 });
-
+            });
         })
     }
 
-    function countFlu() {
+    function countFlu(){
         prediction(function (preds) {
-            console.log(preds);
             var fs = require("fs");
             var text = fs.readFileSync("data/CitiesUK.txt").toString('utf-8');
             var textByLine = text.split("\n");
+            console.log(preds);
             var cities = [];
 
             //format text
-            for (let i = 0; i < textByLine.length; i++) {
-                textByLine[i] = textByLine[i].replace('\r', '').toLowerCase();
+            for(let i = 0; i < textByLine.length; i++) {
+                textByLine[i] = textByLine[i].replace('\r','').toLowerCase();
                 var tweet = {
                     location: textByLine[i],
                     count: 0
@@ -96,10 +99,11 @@ twitter.retrieveTweetsBatch(null, function (tweets) {
                 cities.push(tweet)
             }
 
+            //count occurrences of flu in cities
             for (var i = 0; i < cities.length; i++) {
                 var count = 0;
                 preds.find(function (item) {
-                    if (item.location.toLowerCase().includes(cities[i].location)) {
+                    if (item.location.toLowerCase().includes(cities[i].location)){
                         count++;
                     }
                 })
@@ -107,16 +111,15 @@ twitter.retrieveTweetsBatch(null, function (tweets) {
             }
             console.log(cities);
 
-            var citiesJson = JSON.stringify(cities)
+            var citiesJson = JSON.stringify(cities);
+            console.log(citiesJson);
             fs.writeFile('data/cities.json', citiesJson + '\n', function (err) {
                 if (err) throw error;
             })
         })
     }
-
     countFlu();
 
     exports.prediction = prediction;
 });
-
 
