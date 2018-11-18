@@ -72,7 +72,8 @@
                 file.end();
             }
             callback(allTweets);
-            //console.log(allTweets);
+
+            //enter token for pagination using recursion
             //retrieveTweetsBatch(maxID,callback);
 
             // replace next token with new maxID
