@@ -17,7 +17,8 @@
      * Search first batch of tweets filtered by keyword
      * Twitter Standard Search implementation
      * Tweets of last 7 days or less
-     * returns: JSON response
+     * Currently due to technical limitations recursion is off
+     * @return: JSON response of 100 tweets
      **/
 
     var retrieveTweetsBatch = function (token, callback) {
@@ -27,7 +28,7 @@
             q: 'flu -filter:retweets',
             count: '100',
             lang: 'en',
-            until: '2018-11-11',
+            //until: '2018-11-11',
             geocode: '54.161342,-1.985778,600km',
             max_id: maxID,
         }, function (error, tweets) {
@@ -63,7 +64,7 @@
             if(write) {
                 var fs = require('fs');
 
-                var file = fs.createWriteStream('data/tweets2.csv', {'flags': 'a', 'encoding': 'utf8'});
+                var file = fs.createWriteStream('data/tweets.csv', {'flags': 'a', 'encoding': 'utf8'});
                 file.on('error', function (err) { /* error handling */
                 });
                 for (let i = 0; i < allTweets.length; i++) {

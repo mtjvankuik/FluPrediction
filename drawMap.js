@@ -1,3 +1,8 @@
+/**
+ * Reads JSON array file of cities and flu count
+ * @param callback
+ * @return JSON array
+ **/
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -10,6 +15,11 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
+/**
+ * Reads JSON and draws map.
+ * Also authentication of API is executed.
+ * @param array Array of flu info
+ **/
 loadJSON(function(array) {
 
     console.log(array); // this will log out the json object
@@ -21,6 +31,7 @@ loadJSON(function(array) {
     });
     google.charts.setOnLoadCallback(drawRegionsMap);
 
+    // draws the map
     function drawRegionsMap() {
         //create new data table
         var data = new google.visualization.DataTable();

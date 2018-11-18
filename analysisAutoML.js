@@ -5,7 +5,10 @@ const fs = require('fs');
 const automl = require('@google-cloud/automl');
 const twitter = require('./twitterSearchGet');
 
-
+/**
+ * Client connection to Google AutoML API
+ * @type {constructor}
+ */
 const client = new automl.PredictionServiceClient({
     projectId: 'sacred-portal-221219',
     keyFilename: 'authentication/sacred-portal-221219-6909954c3dda.json'
@@ -14,7 +17,7 @@ const client = new automl.PredictionServiceClient({
 /**
  *  Connection and authorization Google
  *  Prediction on new tweets
- *  @Return Array of tweets classified by model as flu.
+ *  @Return Array of tweets classified by model as real flu.
  */
 const projectId = 'sacred-portal-221219';
 const computeRegion = 'us-central1';
@@ -69,8 +72,8 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
                             }
                         }
 
-                        //console.log(`Predicted class name: ${result.displayName}`);
-                        //console.log(`Predicted class score: ${result.classification.score}`);
+                        console.log(`Predicted class name: ${result.displayName}`);
+                        console.log(`Predicted class score: ${result.classification.score}`);
                     });
 
                 })
@@ -81,6 +84,10 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
         })
     }
 
+    /**
+     * Executes prediction function.
+     * Counts flu cases of tweets and writes array to json file
+     */
     function countFlu(){
         prediction(function (preds) {
             var fs = require("fs");
@@ -111,6 +118,7 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
             }
             console.log(cities);
 
+            //write a json file with cities and flu count
             var citiesJson = JSON.stringify(cities);
             console.log(citiesJson);
             fs.writeFile('data/cities.json', citiesJson + '\n', function (err) {
@@ -121,5 +129,7 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
     countFlu();
 
     exports.prediction = prediction;
+
 });
 
+exports.retrieveTweetsBatch = retrieveTweetsBatch;
