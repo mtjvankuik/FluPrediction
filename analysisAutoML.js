@@ -131,5 +131,3 @@ twitter.retrieveTweetsBatch(null,function(tweets) {
     exports.prediction = prediction;
 
 });
-
-exports.retrieveTweetsBatch = retrieveTweetsBatch;
